@@ -357,18 +357,18 @@ $.fm.mode
 
 ```javascript
 
-$.fm.set_option(
+$.fm.set_option({
 
 		// default:false => Output debug code in dev tool.
 		'debug_flg'			: false,
 
 		// default:false => When no mode name in $.fm.history('any_selector').
-		'first_mode_name'	: 'normal', 
+		'first_mode_name'	: 'normal_mode', 
 		
 		// default:false => Save cnt in $.fm.get_histry('any_selector').
-		'history_cnt'		: 5,
+		'history_cnt'		: 5
 
-)
+})
 
 ```
 
