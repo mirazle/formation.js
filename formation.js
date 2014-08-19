@@ -7,23 +7,24 @@ $(function() {
         'webkitTransitionEnd', // webkit(Chrome1.0, Safari3.2)
         'oTransitionEnd', // Opera10.5
         'otransitionend', // Opera12
-        'transitionend' // IE10, Fx4以降, 12.10以降
+        'transitionend' // IE10, Fx4-, 12.10-
     ];
 
     // Extend Protptype Base Plugin
     $.extend(formation.prototype, {
         mode: {},
-        set: function( element_name, mode_piece ) {
+	get: {},
+        set_mode: function( element_name, mode_piece ) {
             return set_mode_bank(this, element_name, mode_piece);
         },
-        get: function( element_name ) {
+        get_mode: function( element_name ) {
             return get_mode( this, element_name );
         },
         exe: function() {
             this.arguments = arguments;
             return resolve_arguments( this );
         },
-	history: function( element_name ) {
+	get_history: function( element_name ) {
 	    return get_mode_history( this, element_name );
 	},
 	set_option: function( option ) {
