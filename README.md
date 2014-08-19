@@ -24,7 +24,7 @@ You can ..
 ##API
 
 ### list
-- $.fm.data()
+- $.fm.data
 - $.fm.set_mode()
 - $.fm.exe()
 - $.fm.get_mode()
@@ -33,15 +33,22 @@ You can ..
 - $.fm.set_option()
 
 ###$.fm.data
-Define common variables
+Define common variables,
 ```javascript
 
 $.fm.data.header_width = 768;
 ```
-And functions.
+Objects,
 ```javascript
 
-$.fm.data.contents_width = function( mode ){ 
+$.fm.data.contents = {'width': '769', 'height': function(){ /* your code */}};
+
+```
+
+Functions.
+```javascript
+
+$.fm.data.footer_width = function( mode ){ 
 
 	if( mode == 'bottom_right_mode' ){
 		return this.data.header_width;
@@ -49,6 +56,7 @@ $.fm.data.contents_width = function( mode ){
 		return $('#contents').width(); 
 	}
 }
+
 ```
 ###$.fm.set_mode()
 Description.
