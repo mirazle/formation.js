@@ -28,7 +28,7 @@ You can ..
 - $.fm.set()
 - $.fm.exe()
 - $.fm.get()
-- $.fm.get_history()
+- $.fm.history()
 - $.fm.mode
 - $.fm.set_option()
 
@@ -209,11 +209,11 @@ if( $.fm.get( '#animation' ) ) == 'bottom_right_mode' ){
 }
 ```
 
-###$.fm.get_history()
+###$.fm.history()
 Orders from new.
 ```javascript
 
-$.fm.get_history( '#animation' )
+$.fm.history( '#animation' )
 
 >[Object, Object, Object, Object, Object, Object]
 
@@ -221,7 +221,7 @@ $.fm.get_history( '#animation' )
 ..See details.
 ```javascript
 
-$.fm.get_history( '#animation' );
+$.fm.history( '#animation' );
 
 >[
 	{
@@ -353,7 +353,7 @@ $.fm.set_option(
 		// default:false => Output debug code in dev tool.
 		'debug_flg'			: false,
 
-		// default:false => When no mode name in $.fm.get_history('any_selector').
+		// default:false => When no mode name in $.fm.history('any_selector').
 		'first_mode_name'	: 'normal', 
 		
 		// default:false => Save cnt in $.fm.get_histry('any_selector').
