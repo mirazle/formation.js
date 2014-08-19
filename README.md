@@ -58,7 +58,11 @@ $.fm.com.top_left_mode_parallel =
 Functions.
 ```javascript
 
-$.fm.com.get_body_bgcolor = function(){ 
+$.fm.com.finnish_alert_fn = function(){ 
+	alert( 'Finnish!' );
+}
+
+$.fm.com.get_body_bgcolor_fn = function(){ 
 
 	if( ( new Date() ).getMinutes() > 30 ){
 		return {'background-color':'rgba( 255, 255, 255, 1 )'};
@@ -128,7 +132,7 @@ $.fm.set(
 				[
 						{'#ball1'	: $.fm.com.start_mode_ball1 },
 						{'.paralle'	: $.fm.com.start_mode_parallel },
-						{'body'		: $.fm.com.get_body_bgcolor } 
+						{'body'		: $.fm.com.get_body_bgcolor_fn } 
 				],
 
 				'sync'	: false,
@@ -181,7 +185,7 @@ $.fm.exe({
 	['start_mode', 'bottom_right_mode', 'top_left_mode', 'bottom_right_mode'],
 	
 	/* Synchronous Callback Function */
-	'fn': function(){}
+	'fn': $.fm.com.finnish_alert
 })
 ```
 Example3 ( Some arguments )
@@ -194,7 +198,7 @@ $.fm.exe(
 	{'#animation2':['top_left_mode', 'bottom_right_mode'],'fn': function(){}},
 
 	/* Resolve Synchronous One argument */
-	{'#animation3':['top_left_mode', 'bottom_right_mode'],'fn': function(){}}
+	{'#animation3':['top_left_mode', 'bottom_right_mode'],'fn': $.fm.com.finnish_alert }
 )
 ```
 
