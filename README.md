@@ -20,28 +20,11 @@ You can ..
 	<div id='ball3' class='parallel'></div>
 </div>
 ```
-# ○ Store data in $.fm
 
-###$.fm.get
-Define common variables and functions in $.fm.
-```javascript
-
-$.fm.get.header_width = 768;
-```
-```javascript
-
-$.fm.get.contents_width = function( mode ){ 
-
-	if( mode == 'bottom_right_mode' ){
-		return this.get.header_width;
-	}else{
-		return $('#contents').width(); 
-	}
-}
-```
 ##API
 
 ### list
+- $.fm.data()
 - $.fm.set_mode()
 - $.fm.exe()
 - $.fm.get_mode()
@@ -49,6 +32,24 @@ $.fm.get.contents_width = function( mode ){
 - $.fm.mode
 - $.fm.set_option()
 
+###$.fm.data
+Define common variables
+```javascript
+
+$.fm.data.header_width = 768;
+```
+And functions.
+```javascript
+
+$.fm.data.contents_width = function( mode ){ 
+
+	if( mode == 'bottom_right_mode' ){
+		return this.data.header_width;
+	}else{
+		return $('#contents').width(); 
+	}
+}
+```
 ###$.fm.set_mode()
 Description.
 ```javascript
