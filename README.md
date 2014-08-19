@@ -27,13 +27,15 @@ Define common variables and functions in $.fm.
 ```javascript
 
 $.fm.get.header_width = 768;
+```
+```javascript
 
 $.fm.get.contents_width = function( mode ){ 
 
 	if( mode == 'bottom_right_mode' ){
-		$('#contents').width();
+		return this.get.header_width;
 	}else{
-		$('#contents').innerWidth; 
+		return $('#contents').width(); 
 	}
 }
 ```
