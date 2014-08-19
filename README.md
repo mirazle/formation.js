@@ -139,7 +139,7 @@ $.fm.set(
 			{
 				'style'	:
 				[
-						{'#ball1'	: $.fm.com.top_left_mode_balll },
+						{'#ball1'		: $.fm.com.top_left_mode_balll },
 						{'.parallel'	: $.fm.com.top_left_mode_parallel }
 				],
 				'sync'	: true,
@@ -150,7 +150,7 @@ $.fm.set(
 			{
 				'style'	:
 				[
-						{'#ball1'	: {'transform': 'translate( 50px, 50px ) rotate( -45deg ) skew( -45deg, -45deg )'}},
+						{'#ball1'		: {'transform': 'translate( 50px, 50px ) rotate( -45deg ) skew( -45deg, -45deg )'}},
 						{'.parallel'	: {'transform': 'transition':'1000ms','transform': 'scale( 2.2 )'}}
 				],
 				'sync'	: true,
