@@ -42,10 +42,10 @@ $.fm.com.transition2 = '2000ms';
 Objects,
 ```javascript
 
-$.fm.data.start_mode_ball1 = 
+$.fm.com.start_mode_ball1 = 
 	{'display': 'block', 'transition': $.fm.com.transition1,'transform': 'translate( 600px, 600px) rotate( 0deg ) skew( 0deg, 0deg )'};
 
-$.fm.data.start_mode_parallel = 
+$.fm.com.start_mode_parallel = 
 	{'display': 'block', 'transition': $.fm.com.transition2,'transform': 'scale( 1 )'};
 
 ```
@@ -53,7 +53,7 @@ $.fm.data.start_mode_parallel =
 Functions.
 ```javascript
 
-$.fm.data.get_body_bgcolor = function(){ 
+$.fm.com.get_body_bgcolor = function(){ 
 
 	if( ( new Date() ).getMinutes() > 30 ){
 		return {'background-color':'rgba( 255, 255, 255, 1 )'};
@@ -100,8 +100,8 @@ $.fm.set_mode(
 				/* Define styles */
 				'style'	: 
 				[
-						{'#ball1'	: $.fm.data.start_mode_ball1 },
-						{'.paralle'	: $.fm.data.start_mode_parallel },									{'body'		: $.fm.data.get_body_bgcolor } }
+						{'#ball1'	: $.fm.com.start_mode_ball1 },
+						{'.paralle'	: $.fm.com.start_mode_parallel },									{'body'		: $.fm.com.get_body_bgcolor } }
 				],
 	
 				/* Synchronous execution flg */	
@@ -121,9 +121,9 @@ $.fm.set_mode(
 			{
 				'style'	: 
 				[
-						{'#ball1'	: $.fm.data.start_mode_ball1 },
-						{'.paralle'	: $.fm.data.start_mode_parallel },
-						{'body'		: $.fm.data.get_body_bgcolor } 
+						{'#ball1'	: $.fm.com.start_mode_ball1 },
+						{'.paralle'	: $.fm.com.start_mode_parallel },
+						{'body'		: $.fm.com.get_body_bgcolor } 
 				],
 
 				'sync'	: false,
