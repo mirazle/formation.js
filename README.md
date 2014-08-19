@@ -43,16 +43,16 @@ Objects,
 ```javascript
 
 $.fm.com.start_mode_ball1 = 
-	{'display': 'block', 'transition': $.fm.com.transition1,'transform': 'translate( 600px, 600px) rotate( 0deg ) skew( 0deg, 0deg )'};
+	{'display'	: 'block', 'transition': $.fm.com.transition1,'transform': 'translate( 600px, 600px) rotate( 0deg ) skew( 0deg, 0deg )'};
 
 $.fm.com.start_mode_parallel = 
-	{'display': 'block', 'transition': $.fm.com.transition2,'transform': 'scale( 1 )'};
+	{'display'	: 'block', 'transition': $.fm.com.transition2,'transform': 'scale( 1 )'};
 
 $.fm.com.top_left_mode_balll = 
-	{'#ball1' : {'transform': 'translate( 50px, 50px )    rotate( 45deg ) skew( 45deg, 45deg )'}};
+	{'#ball1' 	: {'transform': 'translate( 50px, 50px )    rotate( 45deg ) skew( 45deg, 45deg )'}};
 
 $.fm.com.top_left_mode_parallel = 
-	{'.parallel'    : {'transform': 'transition':'5000ms','transform': 'scale( 2.2 )'}};
+	{'.parallel'	: {'transform': 'transition':'5000ms','transform': 'scale( 2.2 )'}};
 ```
 
 Functions.
@@ -150,7 +150,7 @@ $.fm.set(
 			{
 				'style'	:
 				[
-						{'#ball1'	: {'transform': 'translate( 50px, 50px )	rotate( -45deg ) skew( -45deg, -45deg )'}},
+						{'#ball1'	: {'transform': 'translate( 50px, 50px ) rotate( -45deg ) skew( -45deg, -45deg )'}},
 						{'.parallel'	: {'transform': 'transition':'1000ms','transform': 'scale( 2.2 )'}}
 				],
 				'sync'	: true,
