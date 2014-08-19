@@ -64,7 +64,7 @@ $.fm.data.get_body_bgcolor = function(){
 
 ```
 ###$.fm.set_mode()
-Description.
+Description a structure.
 ```javascript
 $.fm.set_mode( 
 
