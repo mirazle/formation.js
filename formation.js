@@ -13,7 +13,7 @@ $(function() {
     // Extend Protptype Base Plugin
     $.extend(formation.prototype, {
         mode: {},
-	get: {},
+	com: {},
         set_mode: function( element_name, mode_piece ) {
             return set_mode_bank(this, element_name, mode_piece);
         },
