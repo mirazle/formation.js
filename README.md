@@ -38,13 +38,6 @@ $.fm.get.contents_width = function( mode ){
 	}
 }
 ```
-Use data
-```javascript
-if( $.fm.get.contents_width < 768 ){
-	your code.
-}
-```
-
 ##API
 
 ### list
