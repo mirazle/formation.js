@@ -101,7 +101,7 @@ $.fm.set_mode(
 				'style'	: 
 				[
 						{'#ball1'	: $.fm.data.start_mode_ball1 },
-						{'.paralle'	: $.fm.data.start_mode_parallel },												{'body'		:  $.fm.data.get_body_bgcolor } }
+						{'.paralle'	: $.fm.data.start_mode_parallel },									{'body'		: $.fm.data.get_body_bgcolor } }
 				],
 	
 				/* Synchronous execution flg */	
@@ -122,8 +122,8 @@ $.fm.set_mode(
 				'style'	: 
 				[
 						{'#ball1'	: $.fm.data.start_mode_ball1 },
-						{'.paralle'	: $.fm.data.start_mode_parallel },			'transition':'1000ms','transform': 'scale( 1 )'}},
-									{'body'		:  $.fm.data.get_body_bgcolor } 
+						{'.paralle'	: $.fm.data.start_mode_parallel },
+						{'body'		: $.fm.data.get_body_bgcolor } 
 				],
 
 				'sync'	: false,
