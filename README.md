@@ -213,10 +213,9 @@ Get last excution mode,
 and used as a control syntax.
 ```javascript
 /* In your code */
-	if( $.fm.get( '#animation' ) ) == 'bottom_right_mode' ){
+if( $.fm.get( '#animation' ) ) == 'bottom_right_mode' ){
 
-
-	}
+}
 ```
 
 ###$.fm.history()
