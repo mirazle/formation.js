@@ -31,7 +31,7 @@ $(function() {
 	    return set_option( this, option );
 	},
 	option:{
-		    first_mode_name : 'normal',
+		    first_mode_name : 'normal_mode',
 		    debug_flg	    : false,
 		    history_cnt	    : 5
 	}
