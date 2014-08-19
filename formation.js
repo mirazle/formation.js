@@ -14,17 +14,17 @@ $(function() {
     $.extend(formation.prototype, {
         mode: {},
 	com: {},
-        set_mode: function( element_name, mode_piece ) {
+        set: function( element_name, mode_piece ) {
             return set_mode_bank(this, element_name, mode_piece);
         },
-        get_mode: function( element_name ) {
+        get: function( element_name ) {
             return get_mode( this, element_name );
         },
         exe: function() {
             this.arguments = arguments;
             return resolve_arguments( this );
         },
-	get_history: function( element_name ) {
+	history: function( element_name ) {
 	    return get_mode_history( this, element_name );
 	},
 	set_option: function( option ) {
