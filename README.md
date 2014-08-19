@@ -23,17 +23,17 @@ You can ..
 ##API
 
 ### list
-- $.fm.set()
+- $.fm.set_mode()
 - $.fm.exe()
-- $.fm.get()
-- $.fm.history()
+- $.fm.get_mode()
+- $.fm.get_history()
 - $.fm.mode
 - $.fm.set_option()
 
-###$.fm.set()
+###$.fm.set_mode()
 Description.
 ```javascript
-$.fm.set( 
+$.fm.set_mode( 
 
 	/* Tag select */
 	'#animation':{
@@ -56,7 +56,7 @@ $.fm.set(
 ```
 Example1
 ```javascript
-$.fm.set( 
+$.fm.set_mode( 
 
 	/* Tag select */
 	'#animation':{
@@ -82,7 +82,7 @@ $.fm.set(
 ```
 Example2
 ```javascript
-$.fm.set( 
+$.fm.set_mode( 
 	'#animation':{
 		'start_mode':
 			{
@@ -160,27 +160,27 @@ $.fm.exe(
 )
 ```
 
-###$.fm.get()
+###$.fm.get_mode()
 Get last excution mode,
 ```javascript
-  $.fm.get( '#animation' );
+  $.fm.get_mode( '#animation' );
 
 > 'bottom_right_mode'
 
 ```
 and used as a control syntax.
 ```javascript
-if( $.fm.get( '#animation' ) ) == 'bottom_right_mode' ){
+if( $.fm.get_mode( '#animation' ) ) == 'bottom_right_mode' ){
 
 	/* Your code */
 }
 ```
 
-###$.bm.history()
+###$.fm.get_history()
 Orders from new.
 ```javascript
 
-$.fm.history( '#animation' )
+$.fm.get_history( '#animation' )
 
 >[Object, Object, Object, Object, Object, Object]
 
@@ -188,7 +188,7 @@ $.fm.history( '#animation' )
 ..See details.
 ```javascript
 
-$.fm.history( '#animation' );
+$.fm.get_history( '#animation' );
 
 >[
 	{
@@ -320,10 +320,10 @@ $.fm.set_option(
 		// default:false => Output debug code in dev tool.
 		'debug_flg'			: false,
 
-		// default:false => When no mode name in $.fm.history('any_selector').
+		// default:false => When no mode name in $.fm.get_history('any_selector').
 		'first_mode_name'	: 'normal', 
 		
-		// default:false => Save cnt in $.fm.histry('any_selector').
+		// default:false => Save cnt in $.fm.get_histry('any_selector').
 		'history_cnt'		: 5,
 
 )
