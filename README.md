@@ -23,6 +23,7 @@ You can ..
 ##API
 
 ### list
+- $.fm.get
 - $.fm.set_mode()
 - $.fm.exe()
 - $.fm.get_mode()
