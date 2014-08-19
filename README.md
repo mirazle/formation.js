@@ -20,25 +20,14 @@ You can ..
 	<div id='ball3' class='parallel'></div>
 </div>
 ```
-##API
+##BASE FUNCTION
 
-### list
-- $.fm.get
-- $.fm.set_mode()
-- $.fm.exe()
-- $.fm.get_mode()
-- $.fm.get_history()
-- $.fm.mode
-- $.fm.set_option()
-
-###$.fm.get()
-Define common variables.
+###$.fm.get
+Assign some common variables in $.fm.
 ```javascript
 $.fm.get.header_width = 768;
-$.fm.get.footer_width = 768;
 ```
-
-And define common functions.
+Assign some common functions in $.fm.
 ```javascript
 $.fm.get.contents_width = function( mode ){ 
 
@@ -49,6 +38,15 @@ $.fm.get.contents_width = function( mode ){
 	}
 }
 ```
+##API
+
+### list
+- $.fm.set_mode()
+- $.fm.exe()
+- $.fm.get_mode()
+- $.fm.get_history()
+- $.fm.mode
+- $.fm.set_option()
 
 ###$.fm.set_mode()
 Description.
