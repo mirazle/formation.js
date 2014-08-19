@@ -20,7 +20,7 @@ You can ..
 	<div id='ball3' class='parallel'></div>
 </div>
 ```
-##Store data
+# ○ Store data in $.fm
 
 ###$.fm.get
 Assign some common variables in $.fm.
@@ -38,6 +38,13 @@ $.fm.get.contents_width = function( mode ){
 	}
 }
 ```
+Use data
+```javascript
+if( $.fm.get.contents_width < 768 ){
+	your code.
+}
+```
+
 ##API
 
 ### list
