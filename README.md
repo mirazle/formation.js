@@ -20,7 +20,7 @@ You can ..
 	<div id='ball3' class='parallel'></div>
 </div>
 ```
-##BASE FUNCTION
+##Store data
 
 ###$.fm.get
 Assign some common variables in $.fm.
