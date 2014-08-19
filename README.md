@@ -23,12 +23,11 @@ You can ..
 # ○ Store data in $.fm
 
 ###$.fm.get
-Assign some common variables in $.fm.
+Define common variables and functions in $.fm.
 ```javascript
+
 $.fm.get.header_width = 768;
-```
-Assign some common functions in $.fm.
-```javascript
+
 $.fm.get.contents_width = function( mode ){ 
 
 	if( mode == 'bottom_right_mode' ){
