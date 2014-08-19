@@ -25,9 +25,9 @@ You can ..
 
 ### list
 - $.fm.com
-- $.fm.set_mode()
+- $.fm.set()
 - $.fm.exe()
-- $.fm.get_mode()
+- $.fm.get()
 - $.fm.get_history()
 - $.fm.mode
 - $.fm.set_option()
@@ -63,10 +63,10 @@ $.fm.com.get_body_bgcolor = function(){
 }
 
 ```
-###$.fm.set_mode()
+###$.fm.set()
 Description a structure.
 ```javascript
-$.fm.set_mode( 
+$.fm.set( 
 
 	/* Tag select */
 	'#animation':{
@@ -89,7 +89,7 @@ $.fm.set_mode(
 ```
 Example1
 ```javascript
-$.fm.set_mode( 
+$.fm.set( 
 
 	/* Tag select */
 	'#animation':{
@@ -115,7 +115,7 @@ $.fm.set_mode(
 ```
 Example2
 ```javascript
-$.fm.set_mode( 
+$.fm.set( 
 	'#animation':{
 		'start_mode':
 			{
@@ -193,17 +193,17 @@ $.fm.exe(
 )
 ```
 
-###$.fm.get_mode()
+###$.fm.get()
 Get last excution mode,
 ```javascript
-  $.fm.get_mode( '#animation' );
+  $.fm.get( '#animation' );
 
 > 'bottom_right_mode'
 
 ```
 and used as a control syntax.
 ```javascript
-if( $.fm.get_mode( '#animation' ) ) == 'bottom_right_mode' ){
+if( $.fm.get( '#animation' ) ) == 'bottom_right_mode' ){
 
 	/* Your code */
 }
