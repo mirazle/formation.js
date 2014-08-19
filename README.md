@@ -31,6 +31,25 @@ You can ..
 - $.fm.mode
 - $.fm.set_option()
 
+###$.fm.get()
+Define common variables.
+```javascript
+$.fm.get.header_width = 768;
+$.fm.get.footer_width = 768;
+```
+
+And define common functions.
+```javascript
+$.fm.get.contents_width = function( mode ){ 
+
+	if( mode == 'bottom_right_mode' ){
+		$('#contents').width();
+	}else{
+		$('#contents').innerWidth; 
+	}
+}
+```
+
 ###$.fm.set_mode()
 Description.
 ```javascript
