@@ -53,12 +53,12 @@ $.fm.data.start_mode_parallel =
 Functions.
 ```javascript
 
-$.fm.data.footer_width = function( mode ){ 
+$.fm.data.get_body_bgcolor = function(){ 
 
-	if( mode == 'bottom_right_mode' ){
-		return this.data.header_width;
+	if( ( new Date() ).getMinutes() > 30 ){
+		return {'background-color':'rgba( 255, 255, 255, 1 )'};
 	}else{
-		return $('#contents').width(); 
+		return {'background-color':'rgba( 0, 0, 0, 1 )'} 
 	}
 }
 
@@ -101,7 +101,7 @@ $.fm.set_mode(
 				'style'	: 
 				[
 						{'#ball1'	: $.fm.data.start_mode_ball1 },
-						{'.paralle'	: $.fm.data.start_mode_parallel },												{'body'		: function(){  return ( ( new Date() ).getMinutes() > 30 )? {'background-color':'rgba( 255, 255, 255, 1 )'} : {'background-color':'rgba( 0, 0, 0, 1 )'} } }
+						{'.paralle'	: $.fm.data.start_mode_parallel },												{'body'		:  $.fm.data.get_body_bgcolor } }
 				],
 	
 				/* Synchronous execution flg */	
@@ -123,7 +123,7 @@ $.fm.set_mode(
 				[
 						{'#ball1'	: $.fm.data.start_mode_ball1 },
 						{'.paralle'	: $.fm.data.start_mode_parallel },			'transition':'1000ms','transform': 'scale( 1 )'}},
-						{'body'		: function(){  return ( ( new Date() ).getMinutes() > 30 )? {'background-color':'rgba( 255, 255, 255, 1 )'} : {'background-color':'rgba( 0, 0, 0, 1 )'} } }
+									{'body'		:  $.fm.data.get_body_bgcolor } 
 				],
 
 				'sync'	: false,
