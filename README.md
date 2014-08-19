@@ -24,7 +24,7 @@ You can ..
 ##API
 
 ### list
-- $.fm.data
+- $.fm.com
 - $.fm.set_mode()
 - $.fm.exe()
 - $.fm.get_mode()
@@ -32,21 +32,21 @@ You can ..
 - $.fm.mode
 - $.fm.set_option()
 
-###$.fm.data
+###$.fm.com
 Define common variables,
 ```javascript
 
-$.fm.data.common_transition1 = '1000ms';
-$.fm.data.common_transition2 = '2000ms';
+$.fm.com.transition1 = '1000ms';
+$.fm.com.transition2 = '2000ms';
 ```
 Objects,
 ```javascript
 
 $.fm.data.start_mode_ball1 = 
-	{'display': 'block', 'transition': $.fm.data.common_transition1,'transform': 'translate( 600px, 600px) rotate( 0deg ) skew( 0deg, 0deg )'};
+	{'display': 'block', 'transition': $.fm.com.transition1,'transform': 'translate( 600px, 600px) rotate( 0deg ) skew( 0deg, 0deg )'};
 
 $.fm.data.start_mode_parallel = 
-	{'display': 'block', 'transition': $.fm.data.common_transition2,'transform': 'scale( 1 )'};
+	{'display': 'block', 'transition': $.fm.com.transition2,'transform': 'scale( 1 )'};
 
 ```
 
