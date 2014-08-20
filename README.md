@@ -185,7 +185,7 @@ $.fm.exe({
 	['start_mode', 'bottom_right_mode', 'top_left_mode', 'bottom_right_mode'],
 	
 	/* Synchronous Callback Function */
-	'fn': $.fm.com.finnish_alert
+	'fn': $.fm.com.finnish_alert_fn
 })
 ```
 Example3 ( Some arguments )
