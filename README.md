@@ -78,7 +78,7 @@ Description a structure.
 $.fm.set( 
 
 	/* Tag select */
-	'#animation':{
+	'#animation',{
 		
 		/* Mode name */
 		'start_mode':{
@@ -101,7 +101,7 @@ Example1
 $.fm.set( 
 
 	/* Tag select */
-	'#animation':{
+	'#animation',{
 	
 		/* Mode name */
 		'start_mode':
@@ -125,7 +125,7 @@ $.fm.set(
 Example2
 ```javascript
 $.fm.set( 
-	'#animation':{
+	'#animation',{
 		'start_mode':
 			{
 				'style'	: 
