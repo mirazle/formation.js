@@ -52,7 +52,7 @@ $.fm.com.top_left_mode_balll =
 	{'#ball1' 	: {'transform': 'translate( 50px, 50px )    rotate( 45deg ) skew( 45deg, 45deg )'}};
 
 $.fm.com.top_left_mode_parallel = 
-	{'.parallel': {'transform': 'transition':'5000ms','transform': 'scale( 2.2 )'}};
+	{'.parallel': {'transition':'5000ms','transform': 'scale( 2.2 )'}};
 ```
 
 Functions.
