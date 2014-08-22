@@ -110,7 +110,7 @@ $.fm.set(
 				'style'	: 
 				[
 						{'#ball1'	: $.fm.com.start_mode_ball1 },
-						{'.paralle'	: $.fm.com.start_mode_parallel },									{'body'		: $.fm.com.get_body_bgcolor } }
+						{'.paralle'	: $.fm.com.start_mode_parallel },									{'body'		: $.fm.com.get_body_bgcolor }
 				],
 	
 				/* Synchronous execution flg */	
