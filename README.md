@@ -187,10 +187,10 @@ $.fm.exe(
 )
 ```
 
-###$.fm.get()
+###$.fm.get_mode()
 Get last excution mode,
 ```javascript
-  $.fm.get( '#animation' );
+  $.fm.get_mode( '#animation' );
 
 > 'bottom_right_mode'
 
@@ -198,7 +198,7 @@ Get last excution mode,
 and used as a control syntax.
 ```javascript
 /* In your code */
-if( $.fm.get( '#animation' ) ) == 'bottom_right_mode' ){
+if( $.fm.get_mode( '#animation' ) ) == 'bottom_right_mode' ){
 
 }
 ```
