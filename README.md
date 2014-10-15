@@ -58,8 +58,8 @@ $.fm.set_mode(
 	}
 );
 ```
+ModeName: Styles and Function and Setting Sync(object).
 ```javascript
-ModeName: Styles and Function and Setting Sync(object)}.
 $.fm.set_mode( 
 
 	/* Tag select */
