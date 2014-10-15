@@ -33,8 +33,9 @@ You can ..
 
 ###$.fm.set_mode()
 
-Description a structure.
 ```javascript
+
+// Base structure.
 $.fm.set_mode( 
 
 	/* Tag select */
@@ -52,6 +53,30 @@ $.fm.set_mode(
 				/* Synchronous executioned function */
 				'fn'	: function(){}
 			}
+		}
+	}
+);
+
+// Attach CSS Class names.
+$.fm.set_mode( 
+
+	/* Tag select */
+	{'#animation':{
+		
+			/* Mode name : CSS Class names*/
+			'start_mode': 'Class_Name1 Class_Name2'
+		}
+	}
+);
+
+// Attach Function.
+$.fm.set_mode( 
+
+	/* Tag select */
+	{'#animation':{
+		
+			/* Mode name : function */
+			'start_mode': function(){ console.log( 'start_mode function' ); }
 		}
 	}
 );
