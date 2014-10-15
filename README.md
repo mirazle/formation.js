@@ -96,7 +96,8 @@ $.fm.set_mode(
 				'style'	: 
 				[
 						{'#ball1'	: $.start_mode_ball1 },
-						{'.paralle'	: $.start_mode_parallel },									{'body'		: $.com.get_body_bgcolor }
+						{'.paralle'	: $.start_mode_parallel },
+						{'body'		: $.com.get_body_bgcolor }
 				],
 	
 				/* Synchronous execution flg */	
