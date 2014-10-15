@@ -32,8 +32,8 @@ You can ..
 - $.fm.set_option()
 
 ###$.fm.set_mode()
-#### Base structure.
-Mode Name : (string).
+##### Base structure.
+{Mode Name : (string)}.
 ```javascript
 $.fm.set_mode( 
 
@@ -46,7 +46,7 @@ $.fm.set_mode(
 	}
 );
 ```
-// Mode Name : (function).
+{Mode Name : (function)}.
 ```javascript
 $.fm.set_mode( 
 
@@ -60,7 +60,7 @@ $.fm.set_mode(
 );
 ```
 ```javascript
-// Mode Name : (object).
+{Mode Name : (object)}.
 $.fm.set_mode( 
 
 	/* Tag select */
