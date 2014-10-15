@@ -31,8 +31,8 @@ You can ..
 - $.fm.mode
 - $.fm.set_option()
 
-```
 ###$.fm.set_mode()
+
 Description a structure.
 ```javascript
 $.fm.set_mode( 
