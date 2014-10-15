@@ -31,45 +31,6 @@ You can ..
 - $.fm.mode
 - $.fm.set_option()
 
-###$.fm.com
-Define common variables,
-```javascript
-
-$.fm.com.transition1 = '1000ms';
-$.fm.com.transition2 = '2000ms';
-```
-Objects,
-```javascript
-
-$.fm.com.start_mode_ball1 = 
-	{'display'	: 'block', 'transition': $.fm.com.transition1,'transform': 'translate( 600px, 600px) rotate( 0deg ) skew( 0deg, 0deg )'};
-
-$.fm.com.start_mode_parallel = 
-	{'display'	: 'block', 'transition': $.fm.com.transition2,'transform': 'scale( 1 )'};
-
-$.fm.com.top_left_mode_balll = 
-	{'#ball1' 	: {'transform': 'translate( 50px, 50px )    rotate( 45deg ) skew( 45deg, 45deg )'}};
-
-$.fm.com.top_left_mode_parallel = 
-	{'.parallel': {'transition':'5000ms','transform': 'scale( 2.2 )'}};
-```
-
-Functions.
-```javascript
-
-$.fm.com.finnish_alert_fn = function(){ 
-	alert( 'Finnish!' );
-}
-
-$.fm.com.get_body_bgcolor_fn = function(){ 
-
-	if( ( new Date() ).getMinutes() > 30 ){
-		return {'background-color':'rgba( 255, 255, 255, 1 )'};
-	}else{
-		return {'background-color':'rgba( 0, 0, 0, 1 )'} 
-	}
-}
-
 ```
 ###$.fm.set_mode()
 Description a structure.
