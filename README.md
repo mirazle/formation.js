@@ -32,7 +32,7 @@ You can ..
 - $.fm.set_option()
 
 ###$.fm.set_mode()
-// Base structure.
+#### Base structure.
 ```javascript
 
 // Mode Name : (object).
@@ -45,7 +45,7 @@ $.fm.set_mode(
 			'start_mode':{
 		
 				/* Define styles */
-				'style'	: [{}],
+				'style'	: [{},{},{}],
 
 				/* Synchronous execution flg */
 				'sync'	: true,
