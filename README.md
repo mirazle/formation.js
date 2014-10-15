@@ -24,8 +24,7 @@ You can ..
 ##API
 
 ### list
-- $.fm.com
-- $.fm.set()
+- $.fm.set_mode()
 - $.fm.exe()
 - $.fm.get()
 - $.fm.history()
@@ -72,16 +71,16 @@ $.fm.com.get_body_bgcolor_fn = function(){
 }
 
 ```
-###$.fm.set()
+###$.fm.set_mode()
 Description a structure.
 ```javascript
-$.fm.set( 
+$.fm.set_mode( 
 
 	/* Tag select */
-	'#animation',{
+	{'#animation':{
 		
-		/* Mode name */
-		'start_mode':{
+			/* Mode name */
+			'start_mode':{
 		
 				/* Define styles */
 				'style'	: [{}],
@@ -91,6 +90,7 @@ $.fm.set(
 
 				/* Synchronous executioned function */
 				'fn'	: function(){}
+			}
 		}
 	}
 );
@@ -98,10 +98,10 @@ $.fm.set(
 ```
 Example1
 ```javascript
-$.fm.set( 
+$.fm.set_mode( 
 
 	/* Tag select */
-	'#animation',{
+	{'#animation':{
 	
 		/* Mode name */
 		'start_mode':
@@ -109,8 +109,8 @@ $.fm.set(
 				/* Define styles */
 				'style'	: 
 				[
-						{'#ball1'	: $.fm.com.start_mode_ball1 },
-						{'.paralle'	: $.fm.com.start_mode_parallel },									{'body'		: $.fm.com.get_body_bgcolor }
+						{'#ball1'	: $.start_mode_ball1 },
+						{'.paralle'	: $.start_mode_parallel },									{'body'		: $.com.get_body_bgcolor }
 				],
 	
 				/* Synchronous execution flg */	
@@ -119,20 +119,21 @@ $.fm.set(
 				/* Synchronous executioned function */
 				'fn'	: function(){ console.log('Synchronous Callback Function.') }
 			}
+	}
 });
 
 ```
 Example2
 ```javascript
-$.fm.set( 
-	'#animation',{
+$.fm.set_mode( 
+	{'#animation':{
 		'start_mode':
 			{
 				'style'	: 
 				[
-						{'#ball1'	: $.fm.com.start_mode_ball1 },
-						{'.paralle'	: $.fm.com.start_mode_parallel },
-						{'body'		: $.fm.com.get_body_bgcolor_fn } 
+						{'#ball1'	: $.start_mode_ball1 },
+						{'.paralle'	: $.start_mode_parallel },
+						{'body'		: $.get_body_bgcolor_fn } 
 				],
 
 				'sync'	: false,
@@ -143,8 +144,8 @@ $.fm.set(
 			{
 				'style'	:
 				[
-						{'#ball1'		: $.fm.com.top_left_mode_balll },
-						{'.parallel'	: $.fm.com.top_left_mode_parallel }
+						{'#ball1'		: $.top_left_mode_balll },
+						{'.parallel'	: $.top_left_mode_parallel }
 				],
 				'sync'	: true,
 				'fn'	: function(){ console.log('Synchronism Callback Function.') }
@@ -160,6 +161,7 @@ $.fm.set(
 				'sync'	: true,
 				'fn'	: function(){ console.log('Synchronism Callback Function.') }
 			}
+	}
 });
 
 ```
