@@ -1,4 +1,4 @@
-formation.js
+formation.js ver 0.2
 ============
 
 This plug-in is possible CSS definitions, animation execution, and state management.
