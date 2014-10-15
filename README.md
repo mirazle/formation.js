@@ -32,7 +32,7 @@ You can ..
 - $.fm.set_option()
 
 ###$.fm.set_mode()
-ModeName: ClassNames(string)}.
+ModeName: (string) ClassNames.
 ```javascript
 $.fm.set_mode( 
 
@@ -45,7 +45,7 @@ $.fm.set_mode(
 	}
 );
 ```
-ModeName: Function(function)}.
+ModeName: (function) Function.
 ```javascript
 $.fm.set_mode( 
 
@@ -58,7 +58,7 @@ $.fm.set_mode(
 	}
 );
 ```
-ModeName: Styles and Function and Setting Sync(object).
+ModeName: (object) Styles and Function and Setting Sync.
 ```javascript
 $.fm.set_mode( 
 
@@ -82,7 +82,7 @@ $.fm.set_mode(
 );
 ```
 
-Example1
+Other Example1
 ```javascript
 $.fm.set_mode( 
 
@@ -110,7 +110,7 @@ $.fm.set_mode(
 });
 
 ```
-Example2
+Other Example2
 ```javascript
 $.fm.set_mode( 
 	{'#animation':{
@@ -122,7 +122,7 @@ $.fm.set_mode(
 						{'.paralle'	: $.start_mode_parallel },
 						{'body'		: $.get_body_bgcolor_fn } 
 				],
-
+				// paralle execution.
 				'sync'	: false,
 				'fn'	: function(){ console.log('Asynchronous Callback Function.') }
 			},
@@ -156,25 +156,21 @@ $.fm.set_mode(
 ###$.fm.exe()
 Example1 ( One argument )
 ```javascript
-$.fm.exe({
-	/* Tag select */	
-	'#animation':
+$.fm.exe(
 	
-	/* Mode flow */	
-	['start_mode', 'top_left_mode', 'bottom_right_mode']
-})
+	/* Tag select : Mode flow    */	
+	{'#animation': ['start_mode', 'top_left_mode', 'bottom_right_mode']}
+)
 ```
 Example2 ( One argument )
 ```javascript
-$.fm.exe({
-	/* Tag select */	
-	'#animation':
+$.fm.exe(
 	
-	/* Mode flow */	
-	['start_mode', 'bottom_right_mode', 'top_left_mode', 'bottom_right_mode'],
+	/* Tag select : Mode flow    */	
+	{'#animation': ['start_mode', 'top_left_mode', 'bottom_right_mode']},	
 	
 	/* Synchronous Callback Function */
-	'fn': $.fm.com.finnish_alert_fn
+	'fn': function(){ alert('Finnish!') } 
 })
 ```
 Example3 ( Some arguments )
@@ -187,7 +183,7 @@ $.fm.exe(
 	{'#animation2':['top_left_mode', 'bottom_right_mode'],'fn': function(){}},
 
 	/* Resolve Synchronous One argument */
-	{'#animation3':['top_left_mode', 'bottom_right_mode'],'fn': $.fm.com.finnish_alert }
+	{'#animation3':['top_left_mode', 'bottom_right_mode'],'fn': $.finnish_alert }
 )
 ```
 
