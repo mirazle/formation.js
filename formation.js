@@ -17,7 +17,7 @@ $(function() {
 	set_mode: function(mode_piece) {
 	    return set_mode_bank(this, mode_piece);
 	},
-	get: function(element_name) {
+	get_mode: function(element_name) {
 	    return get_mode(this, element_name);
 	},
 	exe: function() {
