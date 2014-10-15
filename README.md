@@ -183,7 +183,7 @@ $.fm.exe(
 	{'#animation2':['top_left_mode', 'bottom_right_mode'],'fn': function(){}},
 
 	/* Resolve Synchronous One argument */
-	{'#animation3':['top_left_mode', 'bottom_right_mode'],'fn': $.finnish_alert }
+	{'#animation3':['top_left_mode', 'bottom_right_mode'],'fn': $.finnish_alert() }
 )
 ```
 
