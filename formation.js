@@ -71,24 +71,27 @@ $(function() {
 
     function set_mode_bank(_t, _mode_piece) {
 
-	var element_name = Object.keys(_mode_piece)[0];
-	var mode_piece = _mode_piece[element_name];
+	var _mode_piece	    = ( _mode_piece.length == undefined )? [ _mode_piece ] : _mode_piece;
 
-	if ($(element_name).length == 0) return false;
+	for( var i = 0; i < _mode_piece.length; i++ ){
 
-	if (_t.mode[element_name] == undefined) {
-	    _t.mode[element_name] = {
-		'mode': _t.option.first_mode_name,
-		'bank': mode_piece,
-		'history': [],
-		'com': {}
-	    };
+	    var element_name    = Object.keys( _mode_piece[ i ] )[ 0 ];
+	    var mode_piece	= _mode_piece[ i ][ element_name ];
 
-	    return true;
-	} else {
-	    _t.mode[element_name]['bank'] = $.extend(true, _t.mode[element_name]['bank'], mode_piece);
-	    return true;
+	    if( talkn.$( element_name ).length == 0 ) return false;
+
+	    if (_t.mode[element_name] == undefined) {
+		_t.mode[element_name] = {
+		    'mode': _t.option.first_mode_name,
+		    'bank': mode_piece,
+		    'history': []
+		};
+
+	    } else {
+		_t.mode[element_name]['bank'] = talkn.$.extend(true, _t.mode[element_name]['bank'], mode_piece);
+	    }
 	}
+	return true;
     }
 
     function set_option(_t, option_obj) {
