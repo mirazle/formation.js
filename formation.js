@@ -441,7 +441,6 @@ $(function() {
         return exe.resolve_series_one_mode[exe.resolve_parallel_all_mode['pointer']].d.promise();
     }
 
-
     function done_phase_controller(phase_no, phase_name, _arguments) {
 
         var exe = _arguments[_arguments.length - 1];
